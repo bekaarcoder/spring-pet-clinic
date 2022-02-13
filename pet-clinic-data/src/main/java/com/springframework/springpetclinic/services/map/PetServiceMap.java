@@ -1,10 +1,12 @@
-package com.springframework.springpetclininc.services.map;
+package com.springframework.springpetclinic.services.map;
 
-import com.springframework.springpetclininc.model.Pet;
-import com.springframework.springpetclininc.services.PetService;
+import com.springframework.springpetclinic.model.Pet;
+import com.springframework.springpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
